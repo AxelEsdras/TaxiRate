@@ -1,0 +1,175 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-top: 50px;
+    padding-bottom: 0; 
+    margin-bottom: 0;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #38393b; 
+    color: white;
+    padding: 10px 20px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid #444444; /* Opcional: para una línea sutil de separación */
+  }
+  
+  .logoContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espacio entre el logo y el título */
+  }
+  
+  .pageTitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .buttonsContainer {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Espacio entre los botones */
+  }
+  
+  .navButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    transition: color 0.2s;
+  }
+  
+  .navButton:hover {
+    color: #ffd700; /* Efecto hover dorado */
+  }
+  
+  .settingsContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espacio entre botones */
+  }
+  
+  .panel {
+    background: #fff;
+    border-radius: 10px;
+    padding-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    min-height: 300px;
+    margin: auto;
+    padding: 10px;
+    margin-top: 80px;
+    color: #4b4b4b;
+  }
+  
+  .taxistaName {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #333; 
+  }
+  
+  .taxistaDetails {
+    font-size: 18px;
+    color: #444; 
+  }
+ 
+  .taxistaDetailsContainer {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin-top: 20px;
+    gap: 50px; 
+  }
+  
+  
+  .ratingTitle {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  .stars {
+    text-align: center;
+    font-size: 24px;
+    margin: 10px 0;
+  }
+  
+  .starFilled {
+    color: gold;
+  }
+  
+  .starEmpty {
+    color: lightgray;
+  }
+  
+  .commentsContainer {
+    margin-top: 20px;
+    max-height: 300px;
+    overflow-y: auto;
+    padding: 10px;
+    margin-bottom: 10px; 
+    height: auto;
+    max-height: 250px;
+  }
+  
+  .commentCard {
+    background: #ebebeb;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex; /* Esto permite controlar alineaciones específicas */
+    flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
+    align-items: center; /* Centra solo los elementos hijos */
+  }
+  
+  .commentText {
+    text-align: left; /* Comentario alineado a la izquierda */
+    width: 100%; /* Asegura que ocupe todo el ancho */
+    margin: 5px 0; /* Espaciado uniforme */
+  }
+  
+  .commentUser,
+  .commentRating {
+    text-align: center; /* Centra el nombre del usuario y la calificación */
+    margin-bottom: 5px;
+  }
+  
+  .star {
+    color: #FFD700 !important; /* Aplica el color dorado a las estrellas */
+    margin: 0 2px; /* Espaciado entre estrellas */
+    font-size: 18px; /* Ajusta el tamaño de las estrellas */
+  }
+  
+  
+  
+  .deleteButton {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    display: block;
+    margin: 10px auto;
+  }
+  
+  .deleteButton:hover {
+    background: #c0392b;
+  }
+  

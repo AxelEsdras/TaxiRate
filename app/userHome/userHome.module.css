@@ -1,0 +1,92 @@
+.container {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  /* Header */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #38393b;
+    color: white;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    border-bottom: 3px solid #444444;
+  }
+  
+  .logoContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .pageTitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .buttonContainer {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .navButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    transition: color 0.3s ease;
+  }
+  
+  .navButton:hover {
+    color: #ffc107;
+  }
+  
+  /* Main Content */
+  .main {
+    margin-top: 150px;
+    text-align: center;
+  }
+  
+  .buttonGrid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .actionButton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #38393b;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    width: 150px;
+    height: 150px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .actionButton:hover {
+    background-color: #4a4a4a;
+    transform: scale(1.05);
+    color: #ffc107;
+  }
+  

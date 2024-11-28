@@ -1,0 +1,153 @@
+/* Container principal */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: lightgray;
+  min-height: 100vh;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+  background-color: #38393b;
+  width: 100%;
+  position: relative;
+  z-index: 999;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+}
+
+.logoImage {
+  margin-right: 10px;
+}
+
+.pageTitle {
+  font-size: 2em;
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+/* Navbar */
+.nav {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+  margin-left: 20px;
+}
+
+.navItem {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  transition: 0.3s ease;
+}
+
+.navItem:hover, 
+.navItem.active {
+  color: #ffc107;
+}
+
+/* Formulario de Login */
+.formContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  width: 100%;
+  min-height: calc(100vh - 100px); /* Ajusta según la altura del header */
+}
+
+.formBox {
+  background-color: #38393b;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  color: white;
+}
+
+.formBox h2 {
+  margin-bottom: 20px;
+  color: #ffc107;
+}
+
+.inputBox {
+  margin-bottom: 20px;
+}
+
+.inputBox input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  color: black;
+  background-color: #f1f1f1;
+}
+
+.inputBox input:focus {
+  border-color: #ffc107;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #ffc107;
+  border: none;
+  color: #38393b;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #e0a800;
+}
+
+.switchText {
+  margin-top: 20px;
+  color: #ffffff;
+}
+
+.switchText a {
+  color: #ffc107;
+  text-decoration: none;
+}
+
+.switchText a:hover {
+  text-decoration: underline;
+}
+
+.error {
+  color: #ff4d4f;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.forgotPassword {
+  color: #ffc107;
+  cursor: pointer;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.forgotPassword:hover {
+  text-decoration: underline;
+}

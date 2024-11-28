@@ -1,0 +1,108 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: lightgray;
+    min-height: 100vh;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+    background-color: #38393b;
+    width: 100%;
+    position: relative;
+    z-index: 999;
+  }
+  
+  .logoContainer {
+    display: flex;
+    align-items: center;
+  }
+
+  .logoImage {
+    margin-right: 10px;
+  }
+  
+  .pageTitle {
+    font-size: 2em;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .nav {
+    display: flex;
+    list-style: none;
+  }
+  
+  .navItem {
+    margin-left: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  .navItem:hover, .navItem.active {
+    color: #ffc107;
+  }
+  
+  .formContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    width: 100%;
+    min-height: calc(100vh - 100px);
+  }
+  
+  .formBox {
+    background-color: #38393b;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    color: white;
+  }
+  
+  .formBox h2 {
+    margin-bottom: 20px;
+    color: #ffc107;
+  }
+  
+  .inputBox {
+    margin-bottom: 20px;
+  }
+  
+  .inputBox input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    color: black;
+    background-color: #f1f1f1;
+  }
+  
+  .btn {
+    background-color: #ffc107;
+    color: #38393b;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .success {
+    color: #4caf50;
+  }
+  
+  .error {
+    color: #ff4d4f;
+  }
+  

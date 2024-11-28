@@ -1,0 +1,176 @@
+/* Estilo general para la página de perfil */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    padding: 20px;
+  }
+  
+  /* Estilo del header */
+  /* Header */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #38393b;
+    color: white;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    border-bottom: 3px solid #444444;
+  }
+  
+  .logoContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .pageTitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .buttonContainer {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .navButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    transition: color 0.3s ease;
+  }
+  
+  .navButton:hover {
+    color: #ffc107;
+  }
+  
+  /* Estilo del contenedor de perfil */
+  .profileContainer {
+    background-color: #6f6f6f;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 120px;
+    color: #ffffff;
+  }
+  
+  .profileIcon {
+    margin-bottom: 20px;
+    background-color: #303030;
+    border-radius: 50%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .userInfo {
+    width: 100%;
+    text-align: left;
+  }
+  
+  .nameContainer, .emailContainer {
+    margin-bottom: 20px;
+  }
+  
+  .nameField {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .nameField input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 70%;
+  }
+  
+  .span {
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .editIcon {
+    cursor: pointer;
+    color: #ffc107;
+  }
+  
+  .actionButton {
+    background-color: #ffc107;
+    color: #303030;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%;
+  }
+  
+  .actionButton:hover {
+    background-color: #e0a800;
+  }
+  
+  .successMessage {
+    color: green;
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .emailButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: #ffc107;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  
+  .emailButton:hover {
+    background-color: #e0a800;
+  }
+  
+  .emailButton svg {
+    margin-right: 10px;
+  }
+
+  .helpContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .helpContent {
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
+  }

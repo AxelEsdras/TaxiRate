@@ -1,0 +1,140 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+  min-height: 100vh; 
+  padding: 20px;
+  margin-top: 25px;
+}
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #38393b; 
+  color: white;
+  padding: 10px 20px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logoImage {
+  height: 60px;
+}
+
+.pageTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.buttonContainer {
+  display: flex;
+  gap: 20px;
+}
+
+.navButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+  transition: color 0.2s ease;
+}
+
+.navButton:hover {
+  color: #ffc107;
+}
+
+.panel {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 80%;
+  max-height: 400px; /* Ajustar la altura máxima para que sea más corta */
+  overflow-y: auto; /* Activar scroll */
+  margin: auto;
+  margin-top: 100px; /* Ajustar la distancia superior para centrarlo mejor */
+  color: #4b4b4b;
+  overflow: hidden;
+}
+
+
+.taxistaName {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+}
+
+.taxistaDetails {
+  font-size: 18px;
+  color: #444;
+}
+
+.taxistaDetailsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 50px;
+}
+
+.ratingTitle {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.stars {
+  text-align: center;
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.star {
+  color: #ffd700;
+  margin: 0 2px;
+  font-size: 18px;
+}
+
+.commentsContainer {
+  margin-top: 20px;
+  max-height: 220px; /* Altura máxima para el contenedor de comentarios */
+  overflow-y: auto; /* Scroll vertical */
+  padding: 10px;
+}
+
+.commentCard {
+  background: #ebebeb;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.commentCard p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.commentCard strong {
+  font-weight: bold;
+}

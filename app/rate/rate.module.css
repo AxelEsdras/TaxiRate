@@ -1,0 +1,200 @@
+/* Contenedor principal */
+.container {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  /* Header */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #38393b; 
+    color: white;
+    padding: 10px 20px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logoContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .logoImage {
+    height: 60px;
+  }
+  
+  .pageTitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .buttonContainer {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    transition: color 0.2s ease;
+  }
+  
+  .navButton:hover {
+    color: #ffc107;
+  }
+  
+  /* Buscador */
+  .searchContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 110px auto 20px; /* Ajustar margen para dar espacio al header */
+  }
+  
+  .searchInput {
+    background-color: white; 
+    color: black;
+    padding: 10px;
+    font-size: 16px;
+    width: 40%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .searchButton {
+    background-color: #ffc107;
+    color: black;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .searchButton:hover {
+    background-color: #e0a800;
+  }
+  
+  /* Información del Taxista */
+  .taxistaInfo {
+    background-color: #2b2b2b;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .taxistaInfo h2,
+  .taxistaInfo p {
+    margin: 10px 0;
+  }
+  
+  .taxistaInfo h3 {
+    margin-top: 20px;
+  }
+  
+  /* Estrellas */
+  .star {
+    font-size: 20px;
+    color: #ffc107;
+    margin: 0 2px;
+  }
+  
+  .starClickable {
+    cursor: pointer;
+  }
+  
+  /* Comentarios */
+  .commentsSection {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+  }
+  
+  .commentsSection h3 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .commentCard {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .commentCard p {
+    margin: 5px 0;
+  }
+  
+  /* Formulario para comentar */
+  .commentForm {
+    background-color: #b0b0b0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .commentForm h3 {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .commentInput {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+  .ratingContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .submitButton,
+  .viewCommentsButton {
+    background-color: #ffc107;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin: 5px;
+  }
+  
+  .submitButton:hover,
+  .viewCommentsButton:hover {
+    background-color: #e0a800;
+  }
+  
