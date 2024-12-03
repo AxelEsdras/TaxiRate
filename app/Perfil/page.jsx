@@ -6,6 +6,7 @@ import { auth, db } from "../firebaseConfig";
 import { getDoc, doc } from "firebase/firestore";
 import styles from "./perfil.module.css";
 import Image from "next/image";
+import { sendPasswordResetEmail } from "firebase/auth";
 import { AiOutlineArrowLeft, AiOutlineSetting, AiOutlineUser, AiOutlineEdit, AiOutlineQuestionCircle } from "react-icons/ai";
 import { useLanguage } from "../context/LanguageContext";
 
@@ -91,14 +92,18 @@ export default function Perfil() {
     try {
       const user = auth.currentUser;
       if (user) {
-        await auth.sendPasswordResetEmail(user.email);
+        await sendPasswordResetEmail(auth, user.email); // Uso correcto de sendPasswordResetEmail
         setPasswordResetSent(true);
+        alert(t.changePasswordSuccess); // Muestra el mensaje de éxito
+      } else {
+        alert("No se encontró un usuario autenticado.");
       }
     } catch (error) {
       console.error("Error sending password reset email:", error);
       alert("Hubo un error al enviar el enlace de cambio de contraseña.");
     }
   };
+  
 
   return (
     <div className={styles.container}>

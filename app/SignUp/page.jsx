@@ -55,22 +55,28 @@ export default function SignUp() {
     try {
       const userCredential = await createUserWithEmailAndPassword(auth, email, password);
       const user = userCredential.user;
-
+  
+      // Enviar correo de verificación
       await sendEmailVerification(user);
       toast.info(t.verificationSent);
-
+  
+      // Guardar datos en Firestore
       await setDoc(doc(db, "users", user.uid), {
         name: username,
         email: email,
         role: "user",
       });
-
-      router.push("/Login");
+  
+      // Esperar un tiempo antes de redirigir
+      setTimeout(() => {
+        router.push("/Login");
+      }, 5000); // 5000ms = 5 segundos
     } catch (error) {
       toast.error(t.accountError);
       console.error(error);
     }
   };
+  
 
   return (
     <div className={styles.container}>

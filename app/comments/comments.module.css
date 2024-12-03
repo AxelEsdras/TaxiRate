@@ -84,15 +84,15 @@
 
 .taxistaDetails {
   font-size: 18px;
-  color: #444;
+  color: #444; 
 }
 
 .taxistaDetailsContainer {
   display: flex;
-  justify-content: center;
+  justify-content: center; 
   align-items: center;
   margin-top: 20px;
-  gap: 50px;
+  gap: 50px; 
 }
 
 .ratingTitle {

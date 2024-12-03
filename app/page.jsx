@@ -1,10 +1,8 @@
 "use client";
 
-import React from "react";
-import Image from "next/image";
-import styles from "./page.module.css";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import { useLanguage } from "./context/LanguageContext"; // Importar contexto de idioma
+import styles from "./page.module.css";
 
 // Traducciones
 const translations = {
@@ -29,14 +27,23 @@ const translations = {
 };
 
 export default function Home() {
-  const { language } = useLanguage(); // Obtener idioma actual
-  const t = translations[language]; // Traducciones dinámicas
+  const [language, setLanguage] = useState("es"); // Idioma predeterminado
+
+  // Cargar el idioma desde el cliente (localStorage)
+  useEffect(() => {
+    const storedLanguage = localStorage.getItem("language");
+    if (storedLanguage) {
+      setLanguage(storedLanguage);
+    }
+  }, []);
+
+  const t = translations[language] || translations.es; // Fallback al español si el idioma no está definido
 
   return (
     <div className={styles.container}>
       <header className={styles.header}>
         <div className={styles.logoContainer}>
-          <Image
+          <img
             src="/logo.jpg"
             alt="Logo Rate Taxi"
             width={100}

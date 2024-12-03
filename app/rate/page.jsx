@@ -241,7 +241,9 @@ export default function Rate() {
             <button
               className={styles.viewCommentsButton}
               onClick={() =>
-                router.push(`/comments?id=${taxista.id}&nombre=${taxista.nombre}`)
+                router.push(
+                  `/comments?id=${taxista.id}&nombre=${taxista.nombre}&numTaxi=${taxista.numTaxi}&placas=${taxista.placas}`
+                )
               }
             >
               {t.viewComments}
